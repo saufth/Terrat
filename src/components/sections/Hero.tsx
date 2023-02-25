@@ -39,10 +39,11 @@ const Hero = () => {
           className={styles.video}
           width={1920}
           height={1080}
-          controls
+          controls={false}
           autoPlay
           muted
           loop
+          playsInline
           disablePictureInPicture
           controlsList='nodownload noplaybackrate'
           onContextMenu={preventContextMenu}
