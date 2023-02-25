@@ -1,0 +1,19 @@
+.button {
+  @apply
+    /* Spacing */
+    w-20
+    h-20
+    [&>span]:w-[50px]
+    [&>span]:h-0.5
+    /* Flexbox & Grid */
+    flex
+    flex-col
+    justify-center
+    items-center
+    gap-y-2.5
+    /* Background */
+    bg-sauft-purple
+    [&>span]:bg-sauft-yellow
+    /* Border */
+    rounded-full;
+}

@@ -1,0 +1,19 @@
+.sphere {
+  @apply
+    /* Sizing */
+    w-full
+    h-full
+    /* Spacing */
+    my-auto
+    pr-[24%]
+    /* Layout */
+    fixed
+    inset-0
+    -z-10
+    /* Background */
+    bg-gradient-to-r
+    from-sauft-purple
+    to-secondary
+    /* Interactivity */
+    will-change-transform;
+}

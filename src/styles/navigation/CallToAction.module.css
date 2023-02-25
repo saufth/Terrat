@@ -1,0 +1,26 @@
+.action {
+  @apply
+    /* Sizing */
+    w-64
+    h-12
+    /* Flexbox & Grid */
+    grid
+    place-content-center
+    /* Typography */
+    font-humnst777-bold
+    md:text-[19px]
+    tracking-wide
+    text-white
+    /* Background */
+    bg-primary
+    /* Border */
+    rounded-2xl;
+}
+
+.actionSecondary {
+  @apply
+    /* Background */
+    bg-secondary
+    /* Typography */
+    text-white;
+}
