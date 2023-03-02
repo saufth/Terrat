@@ -19,11 +19,13 @@ export const descriptionConfig: Translatable = {
 /** The keyword list of the application */
 export const keywordList = [
   'grupo terrat',
-  'grupo inmobiliario',
-  'inmobiliaria',
-  'bienes raices',
-  'desarrollos inmobiliarios',
-  'desarrollos habitacionales'
+  'grupo inmobiliario terrat',
+  'grupo inmobiliario terrat merida yucatan',
+  'inmobiliaria merida yucatan',
+  'bienes raices merida yucatan',
+  'venta de casas meridia yucatan',
+  'desarrollos inmobiliarios merida yucatan',
+  'desarrollos habitacionales merida yucatan'
 ]
 
 /** The keyword list as string */
