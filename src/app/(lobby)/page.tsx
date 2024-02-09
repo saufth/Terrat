@@ -11,7 +11,7 @@ export default function IndexPage () {
   return (
     <>
       <section>
-        <div className='w-full h-[100dvh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10 -mt-[65px] lg:-mt-[81px] flex flex-col justify-center'>
+        <div className='w-full h-[100dvh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10 -mt-[65px] lg:-mt-[81px] flex flex-col justify-center bg-secondary'>
           <div className='container relative z-10'>
             <div className='max-w-3xl mx-auto text-center'>
               <h1 className='mx-auto f-display-1 font-header max-w-[322px] xs:max-w-none text-white'>
@@ -65,7 +65,7 @@ export default function IndexPage () {
                       </div>
                     </div>
                   </div>
-                  <div className='w-6-cols sm:w-8-cols md:w-5-cols lg:w-7-cols bg-accent order-1'>
+                  <div className='w-6-cols sm:w-8-cols md:w-5-cols lg:w-7-cols bg-secondary order-1'>
                     {serviceItem.image && (
                       <Image
                         src={serviceItem.image.src}

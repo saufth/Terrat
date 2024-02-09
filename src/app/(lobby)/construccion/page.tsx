@@ -19,7 +19,7 @@ export default function ConstruccionPage () {
   return (
     <>
       <section>
-        <div className='w-full h-[100dvh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10 -mt-[65px] lg:-mt-[81px] flex flex-col justify-center'>
+        <div className='w-full h-[100dvh] min-h-[500xp] lg:min-h-[600px] max-h-[1000px] relative z-10 -mt-[65px] lg:-mt-[81px] flex flex-col justify-center bg-secondary'>
           <div className='container relative z-10'>
             <div className='max-w-3xl mx-auto text-center'>
               {construccion && (
@@ -44,7 +44,7 @@ export default function ConstruccionPage () {
       <Background>
         {construccion?.items.map((construccionItem, key) => (
           <section className='container py-spacing-5' key={key}>
-            <div className='relative'>
+            <div className='relative bg-secondary'>
               {construccionItem.image && (
                 <Image
                   src={construccionItem.image.src}
