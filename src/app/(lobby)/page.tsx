@@ -53,7 +53,7 @@ export default function IndexPage () {
                       <div className='mt-spacing-4'>
                         {serviceItem.slug && (
                           <Link
-                            className='font-medium flex gap-x-2 rounded-none'
+                            className='font-medium flex gap-x-2 rounded-none border-2 border-secondary'
                             href={serviceItem.slug}
                             variant='default'
                             size='full'
