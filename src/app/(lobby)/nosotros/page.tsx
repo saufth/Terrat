@@ -59,7 +59,7 @@ export default function AboutPage () {
           <div className='container-sm'>
             <div>
               <h2 className='f-display-3 font-header md:pr-9 lg:pr-11 text-center'>
-                Nuestros servicios
+                Nuestra filosofía
               </h2>
             </div>
             <div className='space-y-16 md:space-y-24 mt-spacing-6'>
