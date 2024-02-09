@@ -11,7 +11,7 @@ const CallToAction = React.forwardRef<HTMLAnchorElement, Omit<LinkProps, 'href' 
     return (
       <Link
         href={contactLink.href}
-        className={cn('flex items-center gap-x-1.5 font-medium rounded-none', className)}
+        className={cn('flex items-center gap-x-1.5 font-medium rounded-none border-2 border-secondary', className)}
         size={size}
         variant={variant}
         ref={ref}
@@ -32,7 +32,7 @@ const CallToAbout = React.forwardRef<HTMLAnchorElement, Omit<LinkProps, 'href' |
     return (
       <Link
         href={aboutLink.href}
-        className={cn('flex items-center gap-x-1.5 font-medium rounded-none', className)}
+        className={cn('flex items-center gap-x-1.5 font-medium rounded-none border-2 border-secondary/40', className)}
         size={size}
         variant={variant}
         ref={ref}
@@ -53,7 +53,7 @@ const CallToServices = React.forwardRef<HTMLAnchorElement, Omit<LinkProps, 'href
     return (
       <Link
         href={servicesLink.href}
-        className={cn('flex items-center gap-x-1.5 font-medium rounded-none', className)}
+        className={cn('flex items-center gap-x-1.5 font-medium rounded-none border-2 border-secondary/80', className)}
         size={size}
         variant={variant}
         ref={ref}
@@ -74,7 +74,7 @@ const CallToPurpose = React.forwardRef<HTMLAnchorElement, Omit<LinkProps, 'href'
     return (
       <Link
         href={purposeLink.href}
-        className={cn('flex items-center gap-x-1.5 font-medium rounded-none', className)}
+        className={cn('flex items-center gap-x-1.5 font-medium rounded-none border-2 border-secondary/80', className)}
         size={size}
         variant={variant}
         ref={ref}
