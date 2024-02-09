@@ -75,6 +75,9 @@ export default function AboutPage () {
                           {filosophyItem.description}
                         </p>
                       )}
+                      <div className='mt-spacing-4'>
+                        <CallToAction />
+                      </div>
                     </div>
                   </div>
                   <div className='w-6-cols sm:w-8-cols md:w-5-cols lg:w-7-cols bg-accent order-1'>
