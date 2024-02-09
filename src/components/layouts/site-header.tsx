@@ -55,8 +55,8 @@ export default function SiteHeader () {
                 </div>
                 <div className='block lg:hidden'>
                   <div className='block lg:hidden w-7 h-3 relative [&>span]:transition-all [&>span]:duration-300' onClick={toggleMenu}>
-                    <span className={cn('w-full h-[3px] bg-accent absolute top-0 right-0', isMenuOpen && 'inset-0 m-auto rotate-45')} />
-                    <span className={cn('w-full h-[3px] bg-accent absolute bottom-0 right-0', isMenuOpen && 'inset-0 m-auto -rotate-45')} />
+                    <span className={cn('w-full h-[3px] bg-accent absolute top-0 right-0', isMenuOpen && 'inset-0 m-auto rotate-45 bg-secondary')} />
+                    <span className={cn('w-full h-[3px] bg-accent absolute bottom-0 right-0', isMenuOpen && 'inset-0 m-auto -rotate-45 bg-secondary')} />
                     <span className='sr-only'>Toggle menu</span>
                   </div>
                 </div>
