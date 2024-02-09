@@ -13,13 +13,13 @@ export default function ContactPage () {
   return (
     <>
       <div className='py-spacing-7'>
-        <div className='absolute top-0 inset-x-0 bg-black/80 h-[65px] lg:h-[81px]' />
+        <div className='absolute top-0 inset-x-0 bg-black/80 h-[64.5px] lg:h-[80.5px]' />
         <div className='container'>
           <h1 className='f-display-3 font-header'>
             Ponte en contacto con nosotros
           </h1>
-          <div className='cols-container mt-spacing-6'>
-            <div className='w-full lg:w-5-cols relative mt-12 lg:mt-0 order-2 lg:order-1'>
+          <div className='cols-container mt-spacing-5'>
+            <div className='w-full lg:w-5-cols relative mt-6 lg:mt-0 order-2 lg:order-1'>
               <ContactForm />
             </div>
             <div className='w-full lg:w-7-cols order-1 lg:order-2'>

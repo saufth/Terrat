@@ -30,15 +30,15 @@ export function InfoCard ({ card, className, ...props }: CardDataProps) {
                 {card.description}
               </p>
               )
-            : card.description && (
+            : (
               <>
-                {card.description.map((description, key) => (
+                {card.description?.map((description, key) => (
                   <p className='f-body-1 text-muted-foreground mt-spacing-2 text-balance' key={key}>
                     {description}
                   </p>
                 ))}
               </>
-            )}
+              )}
         </CardContent>
       </div>
     </Card>

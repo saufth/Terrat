@@ -49,21 +49,21 @@ export interface Item extends HeadingWithImageLabel {
   slug?: string
 }
 
-export type ItemWithOptionalImage = Omit<Item, 'image'> & Partial<ImageData>
+export type ItemOptional = Omit<Item, 'image' | 'description'> & Partial<ImageData & Description>
 
-export interface Article extends ItemWithOptionalImage {
+export interface Article extends ItemOptional {
   items: string[]
 }
 
-export interface Section extends ItemWithOptionalImage {
-  items: ItemWithOptionalImage[]
+export interface Section extends ItemOptional {
+  items: ItemOptional[]
 }
 
-export interface Subcategory extends ItemWithOptionalImage {
-  items?: ItemWithOptionalImage[]
+export interface Subcategory extends ItemOptional {
+  items?: ItemOptional[]
 }
 
-export interface Category extends ItemWithOptionalImage {
+export interface Category extends ItemOptional {
   items: Subcategory[]
 }
 

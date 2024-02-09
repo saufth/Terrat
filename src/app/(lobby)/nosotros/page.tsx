@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import { type Metadata } from 'next'
 import BackgroundVideo from '@/components/background-video'
+import Background from '@/components/background'
 import { CallToAction } from '@/components/call-to-action'
-import { Icons } from '@/components/icons'
 import { InfoCard } from '@/components/cards/info-card'
-import { values, history } from '@/config/organization'
+import { values, history, filosophy } from '@/config/organization'
 import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ export default function AboutPage () {
           <BackgroundVideo src='/video/about-hero.mp4' />
         </div>
       </section>
-      <div className='relative z-20 overflow-hidden'>
+      <Background>
         <section className='container-sm pt-spacing-7'>
           <div className='text-center'>
             <h2>
@@ -48,14 +49,53 @@ export default function AboutPage () {
           <div className='cols-container gap-y-gutter mt-spacing-6'>
             {values.map((item, key) => (
               <InfoCard className='w-6-cols sm:w-8-cols lg:w-4-cols' card={item} key={key} />
-            )
-            )}
+            ))}
           </div>
           <div className='w-full justify-center mt-spacing-6 flex flex-col sm:flex-row gap-4'>
             <CallToAction />
           </div>
         </section>
-        <section className='container-sm py-spacing-9 space-y-12'>
+        <section className='py-spacing-7 overflow-hidden'>
+          <div className='container-sm'>
+            <div>
+              <h2 className='f-display-3 font-header md:pr-9 lg:pr-11 text-center'>
+                Nuestros servicios
+              </h2>
+            </div>
+            <div className='space-y-16 md:space-y-24 mt-spacing-6'>
+              {filosophy.map((filosophyItem, key) => (
+                <div className='cols-container items-center mt-spacing-3 even:flex-row-reverse' key={key}>
+                  <div className='w-6-cols sm:w-8-cols md:w-3-cols lg:w-5-cols mt-5 md:mt-0 order-2'>
+                    <div className='sm:max-w-lg'>
+                      <h3 className='f-heading-1 font-header'>
+                        {filosophyItem.title}
+                      </h3>
+                      {filosophyItem.description && (
+                        <p className='f-subhead-2 mt-spacing-3'>
+                          {filosophyItem.description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  <div className='w-6-cols sm:w-8-cols md:w-5-cols lg:w-7-cols bg-accent order-1'>
+                    {filosophyItem.image && (
+                      <Image
+                        src={filosophyItem.image.src}
+                        alt={filosophyItem.image.alt}
+                        width={filosophyItem.image.width}
+                        height={filosophyItem.image.height}
+                        sizes='(max-width: 744px) 100vw, (max-width: 1280px) 100vw, (max-width: 1440px) 100vw, 100vw'
+                        loading='lazy'
+                        className='w-full'
+                      />
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className='container-sm py-spacing-7 space-y-12'>
           <div>
             <h2 className='f-display-3 font-header text-center'>
               Nuestra historia
@@ -89,9 +129,7 @@ export default function AboutPage () {
             <CallToAction />
           </div>
         </section>
-        <Icons.Doodle className='absolute -top-[1%] sm:-top-[6%] 2xl:-top-[12%] -right-[16%] sm:-right-[16%] 2xl:-right-[10%] fill-accent w-screen 2xl:w-[60vw] h-auto opacity-10 -z-10' />
-        <Icons.Doodle className='absolute -bottom-[1%] sm:-bottom-[6%] 2xl:-bottom-[12%] -left-[16%] sm:-left-[16%] 2xl:-left-[10%] fill-accent w-screen 2xl:w-[60vw] h-auto opacity-10 -z-10' />
-      </div>
+      </Background>
     </>
   )
 }

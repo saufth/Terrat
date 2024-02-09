@@ -197,7 +197,11 @@
   }
 
   .text-gradient {
-    @apply text-transparent bg-clip-text bg-gradient-to-t from-black to-zinc-400 dark:from-[#B2B2B4] dark:to-white
+    @apply text-transparent bg-clip-text bg-gradient-to-t from-black to-zinc-400 dark:from-[#B2B2B4] dark:to-white;
+  }
+
+  .text-balance {
+    text-wrap: balance;
   }
 
   /* Container */

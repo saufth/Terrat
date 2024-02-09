@@ -49,10 +49,6 @@ const config: Config = {
         header: ['var(--font-header)', ...fontFamily.sans],
         sans: ['var(--font-sans)', ...fontFamily.sans]
       },
-      textWrap: {
-        balance: 'balance',
-        pretty: 'pretty'
-      },
       colors: {
         primary: {
           DEFAULT: 'oklch(var(--primary) / <alpha-value>)',

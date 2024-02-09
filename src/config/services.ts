@@ -15,6 +15,12 @@ export const services: Category[] = [
       {
         title: 'Renta de propiedades',
         description: 'Simplificamos el proceso de encontrar la propiedad en alquiler ideal en tu ubicación preferida.',
+        image: {
+          src: '/images/service1-category1.webp',
+          alt: 'Grúas torre en obra de construcción de edificos de apartamentos residenciales altos',
+          width: 2480,
+          height: 2480
+        },
         items: [
           {
             title: 'Identificación y selección',
@@ -45,6 +51,12 @@ export const services: Category[] = [
       {
         title: 'Compra de propiedades',
         description: 'Simplificamos el proceso de encontrar la propiedad en alquiler ideal en tu ubicación preferida.',
+        image: {
+          src: '/images/service1-category2.webp',
+          alt: 'Pareja recien casada mudanse a su nueva casa recien comprada',
+          width: 2480,
+          height: 2480
+        },
         items: [
           {
             title: 'Búsqueda personalizada',
@@ -83,6 +95,12 @@ export const services: Category[] = [
       {
         title: 'Venta de propiedades',
         description: 'Descubre oportunidades únicas en el mercado inmobiliario.',
+        image: {
+          src: '/images/service1-category3.webp',
+          alt: 'Sala de un apartamento recien alquilado con muebles modernos y decoración minimalista',
+          width: 2480,
+          height: 2480
+        },
         items: [
           {
             title: 'Análisis de mercado',
@@ -123,7 +141,7 @@ export const services: Category[] = [
   {
     title: 'Servicios de desarrollo inmobiliario',
     description: 'Diseñamos soluciones a medida para tus proyectos.',
-    slug: '/desarrollo',
+    slug: '/desarrolladora',
     image: {
       src: '/images/service2.webp',
       alt: 'Grúas torre en obra de construcción de edificos de apartamentos residenciales altos',
@@ -132,36 +150,47 @@ export const services: Category[] = [
     },
     items: [
       {
-        title: 'Planificación estratégica',
-        description: 'Fusionamos tu visión con la ejecución. Nuestros planes se diseñan para maximizar el potencial de cada desarrollo, integrando análisis de mercado y tendencias emergentes para proyectos inigualables.'
-      },
-      {
-        title: 'Diseño arquitectónico',
-        description: 'Nuestro equipo de arquitectos crearán para ti diseños que no solo son estéticamente cautivadores, sino también funcionales y sostenibles, definiendo el estándar de excelencia arquitectónica.'
-      },
-      {
-        title: 'Gestión de construcción',
-        description: 'Coordinamos cada aspecto, desde la selección de materiales hasta la ejecución, garantizando obras que reflejen la confluencia de funcionalidad e innovación.'
-      },
-      {
-        title: 'Permisos y regulaciones',
-        description: 'Navegamos por el panorama regulatorio con agilidad, obteniendo los permisos necesarios para que cada desarrollo cumpla con los estándares reguladores y legales más estrictos.'
-      },
-      {
-        title: 'Ventas y marketing',
-        description: 'A través de estrategias de marketing personalizadas y ventas estratégicas, posicionamos tu propiedad en el mercado, captando la atención de compradores e inversores calificados.'
-      },
-      {
-        title: 'Sostenibilidad energética',
-        description: 'Integramos innovaciones ecológicas, ya que todos nuestros desarrollos son modernos y sostenibles, contribuyendo a un futuro más verde y eficiente energéticamente.'
-      },
-      {
-        title: 'Gestión de proyectos',
-        description: 'Gestionamos tu proyecto con una supervisión detallada y comunicación transparente, asegurando que tus objetivos, plazos y expectativas de calidad se cumplan consistentemente.'
-      },
-      {
-        title: 'Consultoría de inversiones',
-        description: 'Te ofrecemos asesoramiento experto como inversor, proporcionándote insights críticos y oportunidades de inversión en desarrollos que te ofrezcan retornos atractivos y crecimiento a largo plazo.'
+        title: 'Desarrollo inmobiliario',
+        image: {
+          src: '/images/service2-category1.webp',
+          alt: 'Grúa torre en obra de construcción de edificos de apartamentos residenciales altos',
+          width: 2480,
+          height: 2480
+        },
+        items: [
+          {
+            title: 'Planificación estratégica',
+            description: 'Fusionamos tu visión con la ejecución. Nuestros planes se diseñan para maximizar el potencial de cada desarrollo, integrando análisis de mercado y tendencias emergentes para proyectos inigualables.'
+          },
+          {
+            title: 'Diseño arquitectónico',
+            description: 'Nuestro equipo de arquitectos crearán para ti diseños que no solo son estéticamente cautivadores, sino también funcionales y sostenibles, definiendo el estándar de excelencia arquitectónica.'
+          },
+          {
+            title: 'Gestión de construcción',
+            description: 'Coordinamos cada aspecto, desde la selección de materiales hasta la ejecución, garantizando obras que reflejen la confluencia de funcionalidad e innovación.'
+          },
+          {
+            title: 'Permisos y regulaciones',
+            description: 'Navegamos por el panorama regulatorio con agilidad, obteniendo los permisos necesarios para que cada desarrollo cumpla con los estándares reguladores y legales más estrictos.'
+          },
+          {
+            title: 'Ventas y marketing',
+            description: 'A través de estrategias de marketing personalizadas y ventas estratégicas, posicionamos tu propiedad en el mercado, captando la atención de compradores e inversores calificados.'
+          },
+          {
+            title: 'Sostenibilidad energética',
+            description: 'Integramos innovaciones ecológicas, ya que todos nuestros desarrollos son modernos y sostenibles, contribuyendo a un futuro más verde y eficiente energéticamente.'
+          },
+          {
+            title: 'Gestión de proyectos',
+            description: 'Gestionamos tu proyecto con una supervisión detallada y comunicación transparente, asegurando que tus objetivos, plazos y expectativas de calidad se cumplan consistentemente.'
+          },
+          {
+            title: 'Consultoría de inversiones',
+            description: 'Te ofrecemos asesoramiento experto como inversor, proporcionándote insights críticos y oportunidades de inversión en desarrollos que te ofrezcan retornos atractivos y crecimiento a largo plazo.'
+          }
+        ]
       }
     ]
   },
@@ -177,30 +206,14 @@ export const services: Category[] = [
     },
     items: [
       {
-        title: 'Renta de propiedades',
-        description: 'Simplificamos el proceso de encontrar la propiedad en alquiler ideal en tu ubicación preferida.',
-        items: [
-          {
-            title: 'Alquiler de maquinaria',
-            description: 'Ponemos a tu disposición equipos como excavadoras, cargadoras frontales, mezcladoras de concreto, compactadores y grúas torre para asegurar su óptimo rendimiento, garantizando que cada fase de tu proyecto cuente con la maquinaria adecuada.'
-          },
-          {
-            title: 'Herramientas eléctricas',
-            description: 'Te ofrecemos herramientas precisas y eficientes como taladros, sierras circulares, pulidoras, martillos rotativos y amoladoras. Nos aseguramos de que siempre tengas la herramienta que necesitas para maximizar tu productividad.'
-          },
-          {
-            title: 'Equipos de seguridad',
-            description: 'Tu bienestar es nuestra prioridad. Ampliamos nuestra oferta con cascos de seguridad, arneses, chalecos reflectantes, botas de seguridad y gafas protectoras, todos certificados para garantizar que tu equipo esté seguro en todo momento.'
-          },
-          {
-            title: 'Sistemas de andamiaje',
-            description: 'Contamos con opciones robustas y versátiles de andamios tubulares, plataformas elevadoras, escaleras de extensión, torres móviles y sistemas modulares para asegurar que puedas acceder y trabajar en cualquier altura con total confianza y seguridad.'
-          }
-        ]
-      },
-      {
         title: 'Venta de materiales para la construcción',
         description: 'Suministramos materiales de construcción de calidad para que tu proyecto se construya con solidez y durabilidad.',
+        image: {
+          src: '/images/service3-category1.webp',
+          alt: 'Hombre comprando materiales de construcción en una tienda de suministros de construcción',
+          width: 2480,
+          height: 2480
+        },
         items: [
           {
             title: 'Maquinaria especializada',
@@ -222,7 +235,13 @@ export const services: Category[] = [
       },
       {
         title: 'Renta de materiales para la industria',
-        description: 'Optimiza tus operaciones industriales a través de la renta de materiales  específicos justamente para lo que necesitas.',
+        description: 'Optimiza tus operaciones industriales a través de la renta de materiales específicos justamente para lo que necesitas.',
+        image: {
+          src: '/images/service3-category2.webp',
+          alt: 'Maquinaria industrial recibiendo mantenimiento en una fábrica',
+          width: 2480,
+          height: 2480
+        },
         items: [
           {
             title: 'Maquinaria industrial',
@@ -245,6 +264,12 @@ export const services: Category[] = [
       {
         title: 'Venta de materiales para la industria',
         description: 'Ofrecemos materiales industriales de primera calidad para impulsar la eficiencia y la excelencia en tu negocio.',
+        image: {
+          src: '/images/service3-category3.webp',
+          alt: 'Maquina industrial nueva dentro de una fábrica',
+          width: 2480,
+          height: 2480
+        },
         items: [
           {
             title: 'Maquinaria especializada',

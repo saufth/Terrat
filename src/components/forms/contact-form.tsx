@@ -28,7 +28,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { type Inputs, contactEmailSchema } from '@/lib/validations/email'
 import { services } from '@/config/services'
 
-// const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA_SITE)
+const recaptchaSitekey = String(process.env.NEXT_PUBLIC_RECAPTCHA_SITE)
 
 export default function ContactForm () {
   const [isPending, startTransition] = React.useTransition()
@@ -177,27 +177,29 @@ export default function ContactForm () {
             </FormItem>
           )}
         />
-        {/* <div className='flex'>
+        <div className='flex'>
           <ReCAPTCHA
             ref={recaptchaRef}
             sitekey={recaptchaSitekey}
           />
-        </div> */}
-        <Button
-          className='rounded-none [&>*]:text-foreground [&>*]:font-medium'
-          size='full'
-          disabled={isPending}
-        >
-          {isPending
-            ? (
-              <span className='flex items-center gap-x-3'>
-                Enviando <Icons.Spinner className='h-4 w-4' aria-hidden='true' />
-              </span>)
-            : (
-              <span className='flex items-center gap-x-3'>
-                Enviar <PaperPlaneIcon className='h-4 w-4' aria-hidden='true' />
-              </span>)}
-        </Button>
+        </div>
+        <div className='pt-spacing-3'>
+          <Button
+            className='rounded-none [&>*]:text-foreground [&>*]:font-medium'
+            size='full'
+            disabled={isPending}
+          >
+            {isPending
+              ? (
+                <span className='flex items-center gap-x-3'>
+                  Enviando <Icons.Spinner className='h-4 w-4' aria-hidden='true' />
+                </span>)
+              : (
+                <span className='flex items-center gap-x-3'>
+                  Enviar <PaperPlaneIcon className='h-4 w-4' aria-hidden='true' />
+                </span>)}
+          </Button>
+        </div>
       </form>
     </Form>
   )

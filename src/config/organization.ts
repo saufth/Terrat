@@ -1,80 +1,60 @@
 import { type Heading, type HeadingWithImage } from '@/types'
 
-export const filosophy: Heading[] = [
+export const filosophy: HeadingWithImage[] = [
   {
     title: 'Nuestra misión',
-    description: 'En TERRAT, nos dedicamos a transformar sueños en realidades, ofreciendo soluciones integrales en el sector inmobiliario y de la construcción.'
+    description: 'En TERRAT, nos dedicamos a transformar sueños en realidades, ofreciendo soluciones integrales en el sector inmobiliario y de la construcción.',
+    image: {
+      src: '/images/filosophy1.webp',
+      alt: 'Edificio moderno y milimalista de oficinas corporativas en el centro de la ciudad',
+      width: 2480,
+      height: 2480
+    }
   },
   {
     title: 'Nuestra visión',
-    description: 'Nos vemos como contribuyendo a un mundo donde la sostenibilidad, la tecnología y el diseño converjan para crear espacios que trasciendan generaciones.'
+    description: 'Nos vemos como contribuyendo a un mundo donde la sostenibilidad, la tecnología y el diseño converjan para crear espacios que trasciendan generaciones.',
+    image: {
+      src: '/images/filosophy2.webp',
+      alt: 'Grúas torre en obra de construcción de edificos de apartamentos residenciales altos',
+      width: 2480,
+      height: 2480
+    }
   }
 ]
 
-export const values: HeadingWithImage[] = [
+export const values: Heading[] = [
   {
     title: 'Integridad',
-    description: 'Actuamos con honestidad y transparencia, construyendo relaciones basadas en la confianza.',
-    image: {
-      src: '/images/culture1.webp',
-      alt: 'No asumimos'
-    }
+    description: 'Actuamos con honestidad y transparencia, construyendo relaciones basadas en la confianza.'
   },
   {
     title: 'Innovación',
-    description: 'Adoptamos nuevas tecnologías y métodos para mejorar constantemente nuestros servicios y productos.',
-    image: {
-      src: '/images/culture2.webp',
-      alt: 'Planeamos y ejecutamos con estrategia'
-    }
+    description: 'Adoptamos nuevas tecnologías y métodos para mejorar constantemente nuestros servicios y productos.'
   },
   {
     title: 'Calidad',
-    description: 'Nos comprometemos con la excelencia, asegurando la máxima calidad en cada proyecto y servicio.',
-    image: {
-      src: '/images/culture3.webp',
-      alt: 'Buscamos progreso, no perfección'
-    }
+    description: 'Nos comprometemos con la excelencia, asegurando la máxima calidad en cada proyecto y servicio.'
   },
   {
     title: 'Sostenibilidad',
-    description: 'Integramos prácticas amigables con el ambiente en todos los aspectos de nuestro negocio.',
-    image: {
-      src: '/images/culture4.webp',
-      alt: 'Inovamos constantemente'
-    }
+    description: 'Integramos prácticas amigables con el ambiente en todos los aspectos de nuestro negocio.'
   },
   {
     title: 'Responsabilidad social',
-    description: 'Contribuimos al bienestar de la comunidad y la sociedad en general.',
-    image: {
-      src: '/images/culture5.webp',
-      alt: 'Prevenimos futuras tendencias'
-    }
+    description: 'Contribuimos al bienestar de la comunidad y la sociedad en general.'
   },
   {
     title: 'Profesionalismo',
-    description: 'Mantenemos un alto nivel de competencia, habilidad y conocimiento en nuestras operaciones.',
-    image: {
-      src: '/images/culture6.webp',
-      alt: 'Prevenimos futuras tendencias'
-    }
+    description: 'Mantenemos un alto nivel de competencia, habilidad y conocimiento en nuestras operaciones.'
   },
   {
     title: 'Respeto',
-    description: 'Valoramos y consideramos las necesidades, deseos y derechos de todos los individuos y comunidades con los que interactuamos.',
-    image: {
-      src: '/images/culture7.webp',
-      alt: 'Prevenimos futuras tendencias'
-    }
+    description: 'Valoramos y consideramos las necesidades, deseos y derechos de todos los individuos y comunidades con los que interactuamos.'
   },
   {
     title: 'Colaboración',
-    description: 'Fomentamos un ambiente de trabajo en equipo y colaboración interna y externa.',
-    image: {
-      src: '/images/culture8.webp',
-      alt: 'Transformamos problemas en oportunidades'
-    }
+    description: 'Fomentamos un ambiente de trabajo en equipo y colaboración interna y externa.'
   }
 ]
 
