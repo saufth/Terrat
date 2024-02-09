@@ -24,9 +24,9 @@ export default function SiteHeader () {
     <>
       <header
         className={cn(
-          'w-full sticky top-0 left-0 z-40 border-b border-b-stone-400 transition-colors duration-300 bg-black/80 backdrop-filter backdrop-saturate-150 backdrop-blur-lg transition-color',
-          isOnTop && 'bg-transparent border-transparent',
-          isMenuOpen && 'border-transparent bg-transparent'
+          'w-full sticky top-0 left-0 z-40 border-none transition-colors duration-300 bg-black/80 backdrop-filter backdrop-saturate-150 backdrop-blur-lg transition-color',
+          isOnTop && 'bg-transparent',
+          isMenuOpen && 'bg-transparent'
         )}
       >
         <nav className='relative' aria-label='Emah Directory'>
