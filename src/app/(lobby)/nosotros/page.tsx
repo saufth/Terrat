@@ -24,7 +24,7 @@ export default function AboutPage () {
                 Cada proyecto es una historia de éxito y satisfacción
               </h1>
               <p className='f-subhead-1 font-medium mt-spacing-4 text-white text-balance'>
-                Construyendo tu futuro, ladrillo a ladrillo: Terrar, tu socio confiable en el mundo inmobiliario.
+                Construyendo tu futuro, ladrillo a ladrillo, somos tu socio confiable en el mundo inmobiliario.
               </p>
               <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
                 <CallToAction />
