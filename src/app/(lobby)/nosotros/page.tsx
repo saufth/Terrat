@@ -43,7 +43,7 @@ export default function AboutPage () {
               </span>
             </h2>
             <p className='f-subhead-2 text-muted-foreground text-balance mt-spacing-3'>
-              Los valores de TERRAT están integrados se ven reflejados en todas sus acciones y decisiones.
+              Los valores de Terrat se integran y reflejan en todas sus acciones y decisiones.
             </p>
           </div>
           <div className='cols-container gap-y-gutter mt-spacing-6'>
