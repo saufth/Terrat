@@ -21,10 +21,10 @@ export default function AboutPage () {
           <div className='container relative z-10'>
             <div className='max-w-3xl mx-auto text-center'>
               <h1 className='mx-auto f-display-1 font-header max-w-[322px] xs:max-w-none text-white'>
-                Lorem ipsum dolor sit amet consectetur
+                Cada proyecto es una historia de éxito y satisfacción
               </h1>
               <p className='f-subhead-1 font-medium mt-spacing-4 text-white text-balance'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit amet consectetur.
+                Construyendo tu futuro, ladrillo a ladrillo: Terrar, tu socio confiable en el mundo inmobiliario.
               </p>
               <div className='w-full justify-center mt-spacing-5 flex flex-col sm:flex-row gap-4'>
                 <CallToAction />
