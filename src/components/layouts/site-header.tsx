@@ -31,9 +31,7 @@ export default function SiteHeader () {
       >
         <nav className='relative' aria-label='Emah Directory'>
           <div className='container'>
-            <div
-              className='w-full h-16 lg:h-20 flex justify-between items-center'
-            >
+            <div className='w-full h-16 lg:h-20 flex justify-between items-center'>
               <div className='h-8 lg:h-10'>
                 <NextLink href='/' onClick={closeMenu}>
                   <Icons.Logotype className='w-auto h-full fill-primary first:[&>path]:fill-accent' />
@@ -45,7 +43,11 @@ export default function SiteHeader () {
                   <ul className='flex items-center gap-x-5'>
                     {siteNav.map((navItem, key) => (
                       <li key={key} className='last:hidden'>
-                        <Link href={navItem.href} className='hidden lg:flex px-1 text-white font-semibold' variant='link'>
+                        <Link
+                          href={navItem.href}
+                          className='hidden lg:flex px-1 text-white font-semibold'
+                          variant='link'
+                        >
                           {navItem.title}
                         </Link>
                       </li>
@@ -54,11 +56,11 @@ export default function SiteHeader () {
                   <CallToAction className='hidden lg:flex' size='default' />
                 </div>
                 <div className='block lg:hidden'>
-                  <div className='block lg:hidden w-7 h-3 relative [&>span]:transition-all [&>span]:duration-300' onClick={toggleMenu}>
+                  <button className='block lg:hidden w-7 h-3 relative [&>span]:transition-all [&>span]:duration-300 ring-0 focus-visible:ring-0' onClick={toggleMenu}>
                     <span className={cn('w-full h-[3px] bg-accent absolute top-0 right-0', isMenuOpen && 'inset-0 m-auto rotate-45 bg-secondary')} />
                     <span className={cn('w-full h-[3px] bg-accent absolute bottom-0 right-0', isMenuOpen && 'inset-0 m-auto -rotate-45 bg-secondary')} />
                     <span className='sr-only'>Toggle menu</span>
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
