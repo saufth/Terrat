@@ -22,7 +22,7 @@ export function ServiceCard ({ card, className, ...props }: CardDataProps) {
         <CardHeader className='space-y-1.5 sm:space-y-2 lg:space-y-2'>
           {card.label && (
             <Badge className='dark:bg-zinc-900' variant='outline'>
-              <span className='text-emah text-xs'>
+              <span className='text-xs'>
                 {card.label}
               </span>
             </Badge>

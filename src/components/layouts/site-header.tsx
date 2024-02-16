@@ -29,7 +29,7 @@ export default function SiteHeader () {
           isMenuOpen && 'bg-transparent'
         )}
       >
-        <nav className='relative' aria-label='Emah Directory'>
+        <nav className='relative' aria-label={`${siteConfig.name} Directory`}>
           <div className='container'>
             <div className='w-full h-16 lg:h-20 flex justify-between items-center'>
               <div className='h-8 lg:h-10'>

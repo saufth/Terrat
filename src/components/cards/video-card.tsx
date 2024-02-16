@@ -52,7 +52,7 @@ export default function Video () {
             onContextMenu={preventContextMenu}
             ref={videoRef}
           >
-            <source src='/video/emah.mp4' type='video/mp4' />
+            <source src='/video/x.mp4' type='video/mp4' />
           </video>
           <div className='w-full p-3 lg:absolute bottom-0 left-0 flex justify-end items-center gap-x-2'>
             <Button size='xs' variant='link' className='lg:text-white' onClick={handleDimissVideo}>
